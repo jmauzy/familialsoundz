@@ -1,4 +1,4 @@
-webpackHotUpdate("static/development/pages/releases.js",{
+webpackHotUpdate("static/development/pages/index.js",{
 
 /***/ "./data/releases.js":
 /*!**************************!*\
@@ -102,7 +102,7 @@ function _templateObject() {
   3: {
     date: '2019-08-01',
     issue: 3,
-    title: 'Yesterday Was Dramatic, Today is OK',
+    title: 'Yesterday Was Dramatic - Today is OK',
     artist: 'múm',
     year: '1999',
     discogs_release: 28802,
@@ -201,4 +201,4 @@ function _templateObject() {
 /***/ })
 
 })
-//# sourceMappingURL=releases.js.44b6a30edf0f79e3ab89.hot-update.js.map
+//# sourceMappingURL=index.js.b48fb7f0c9ad0fb8913f.hot-update.js.map
