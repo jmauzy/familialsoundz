@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{VTju:function(n,w){},hJ7a:function(n,w,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/release",function(){var n=o("VTju");return{page:n.default||n}}])}},[["hJ7a",0]]]);

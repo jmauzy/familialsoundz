@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{"6o6e":function(n,o,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/releases",function(){var n=e("B9Jj");return{page:n.default||n}}])},B9Jj:function(n,o){}},[["6o6e",0]]]);
