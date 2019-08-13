@@ -5,7 +5,7 @@ export default {
 	3: {
 		date: '2019-08-01',
 		issue: 3,
-		title: 'Yesterday Was Dramatic, Today is OK',
+		title: 'Yesterday Was Dramatic - Today is OK',
 		artist: 'múm',
 		year: '1999',
 		discogs_release: 28802,

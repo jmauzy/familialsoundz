@@ -9,7 +9,7 @@ export default function ReleasesNavigation({issue}) {
 	const release = getReleaseByIssue(issue);
 	if (!release) return null;
 
-	const latest_issue = getLatestIssue();
+	const latest_issue = Number(getLatestIssue());
 
 	function getIssueLink(issue, anchor_text) {
 		return <Link href={`/releases?issue=${issue}`}>{anchor_text}</Link>
@@ -29,6 +29,7 @@ const NavigationWrap = styled.div`
 	margin-bottom: 10px;
 
 	& a {
+		color: black;
 		text-decoration: none;
 		cursor: pointer;
 	}

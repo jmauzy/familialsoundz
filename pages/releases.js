@@ -9,7 +9,7 @@ import { getLatestIssue } from '../helpers';
 export default function Release() {
 	const router = useRouter();
 	
-	const issue = router.query.issue || getLatestIssue();
+	const issue = router.query.issue ? Number(router.query.issue) : getLatestIssue();
 	if (!issue) return null;
 
 	return (
