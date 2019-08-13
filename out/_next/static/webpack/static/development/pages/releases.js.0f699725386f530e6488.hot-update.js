@@ -23,7 +23,7 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/mauzy/Sites/familialsoundz/components/navigation.js";
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tmargin-bottom: 10px;\n\n\t& a {\n\t\ttext-decoration: none;\n\t\tcursor: pointer;\n\t}\n\n\t& a:visited {\n\t\tcolor: black;\n\t}\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tmargin-bottom: 10px;\n\n\t& a {\n\t\tcolor: black;\n\t\ttext-decoration: none;\n\t\tcursor: pointer;\n\t}\n\n\t& a:visited {\n\t\tcolor: black;\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -41,7 +41,7 @@ function ReleasesNavigation(_ref) {
   var issue = _ref.issue;
   var release = Object(_helpers__WEBPACK_IMPORTED_MODULE_5__["getReleaseByIssue"])(issue);
   if (!release) return null;
-  var latest_issue = Object(_helpers__WEBPACK_IMPORTED_MODULE_5__["getLatestIssue"])();
+  var latest_issue = Number(Object(_helpers__WEBPACK_IMPORTED_MODULE_5__["getLatestIssue"])());
 
   function getIssueLink(issue, anchor_text) {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -79,4 +79,4 @@ var NavigationWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].d
 /***/ })
 
 })
-//# sourceMappingURL=releases.js.4b7c76d0b55a28e81b3c.hot-update.js.map
+//# sourceMappingURL=releases.js.0f699725386f530e6488.hot-update.js.map
