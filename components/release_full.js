@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {getReleaseByDate} from '../helpers'
+import {getReleaseByIssue} from '../helpers'
 import ReleasePlaque from './release_plaque';
 import ReleaseWriteup from './release_writeup';
 
-export default function ReleaseFull({date}) {
+export default function ReleaseFull({issue}) {
 
-	const release = getReleaseByDate(date);
+	const release = getReleaseByIssue(issue);
 
 	if (!release) return <div>not found</div>
 
 	return (
 		<ReleaseWrap>
-			<ReleasePlaque date={date} />
-			<ReleaseWriteup date={date} />
+			<ReleasePlaque issue={issue} />
+			<ReleaseWriteup issue={issue} />
 		</ReleaseWrap>
 	);
 }

@@ -2,17 +2,18 @@ import React from 'react';
 import {oneLine} from 'common-tags';
 
 export default {
-	'2019_08': {
+	3: {
+		date: '2019-08-01',
 		issue: 3,
 		title: 'Yesterday Was Dramatic, Today is OK',
 		artist: 'múm',
-		year: '2001',
+		year: '1999',
 		discogs_release: 28802,
 		color: '#35623b',
 		description: <>{oneLine`
 		Though not as as well-known (or perhaps accessible) as their followup Finally We Are
 		No One, múm’s debut Yesterday Was Dramatic - Today is OK, was a critical darling
-		and one of the more inspired electronic releases of the early 2000s.`}
+		and one of the more inspired electronic releases of the late 90s.`}
 		<br/><br/>
 		{oneLine`The album introduces itself well with I’m 9 Today, which dives straight into
 		clicky, IDM-esque arrangements of acoustic samples and backing melodies of more
@@ -35,7 +36,8 @@ export default {
 		</>
 	},
 
-	'2019_07': {
+	2: {
+		date: '2019-07-01',
 		issue: 2,
 		title: 'Criola',
 		artist: 'Denis Mpunga & Paul K.',
@@ -64,7 +66,8 @@ export default {
 		</>
 	},
 
-	'2019_06': {
+	1: {
+		date: '2019-06-01',
 		issue: 1,
 		title: 'Memories in Beach House',
 		artist: 'Seaside Lovers',

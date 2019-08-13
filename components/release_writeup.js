@@ -2,13 +2,12 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import dayjs from 'dayjs';
-import {getReleaseByDate} from '../helpers'
+import {getReleaseByIssue} from '../helpers'
 
-export default function ReleasePlaque({date}) {
-	const release = getReleaseByDate(date);
+export default function ReleasePlaque({issue}) {
+	const release = getReleaseByIssue(issue);
 
-	const split_date = date.split('_')
-	const formatted_date = dayjs(new Date(split_date[0], split_date[1], 1)).format('MMMM YYYY');
+	const formatted_date = dayjs(release.date).format('MMMM YYYY');
 
 	return (
 		<WriteupWrap>

@@ -1,16 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import {getReleaseByDate} from '../helpers'
 
-export default function DiscogsLink({date}) {
+export default function DiscogsLink({release}) {
 
-	const release = getReleaseByDate(date);
-
-	const discogs_url = `https://discogs.com/release/${release.discogs_release}`;
+	const discogs_url = `https://discogs.com/release/${release}`;
 
 	return (
-		<a href={discogs_url}>View Release on Discogs</a>
+		<DiscogsLinkAnchor href={discogs_url}>View Release on Discogs</DiscogsLinkAnchor>
 	);
 }
+
+const DiscogsLinkAnchor = styled.a`
+	cursor: pointer;
+	color: black;
+`;
 

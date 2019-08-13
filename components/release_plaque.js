@@ -2,31 +2,29 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import dayjs from 'dayjs';
-import {getReleaseByDate} from '../helpers';
+import {getReleaseByIssue} from '../helpers';
 import DiscogsLink from './discogs_link';
 
-export default function ReleasePlaque({date}) {
+export default function ReleasePlaque({issue}) {
 	const [cover_url, setCoverUrl] = useState(null);
 	let surround_color = '#000000';
 
-	const release = getReleaseByDate(date);
+	const release = getReleaseByIssue(issue);
 
 	if (release.color) {
 		surround_color = release.color;
 	}
-
-	const split_date = date.split('_')
-	const formatted_date = dayjs(new Date(split_date[0], split_date[1], 1)).format('M.YY');
+	const formatted_date = dayjs(release.date).format('M.YY');
 
 	return (
 		<PlaqueWrap>
 			<PlaqueSurround surround_color={surround_color}>
-				<PlaqueCoverArt src={`/static/covers/${date}.jpg`} />
+				<PlaqueCoverArt src={`/static/covers/${issue}.jpg`} />
 				<PlaqueDate>{formatted_date}</PlaqueDate>
 				<PlaqueTitle>{release.title.toUpperCase()}</PlaqueTitle>
 			</PlaqueSurround>
 			<LinksWrap>
-				<DiscogsLink date={date} />
+				<DiscogsLink release={release.discogs_release} />
 			</LinksWrap>
 		</PlaqueWrap>
 	);
