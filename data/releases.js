@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import {oneLine} from 'common-tags';
 
 export default {
