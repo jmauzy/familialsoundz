@@ -11,7 +11,7 @@ export default {
 		discogs_release: 28802,
 		color: '#35623b',
 		description: <>{oneLine`
-		Though not as as well-known (or perhaps accessible) as their followup Finally We Are
+		Though not as as well-known (or perhaps accessible) as their follow-up Finally We Are
 		No One, múm’s debut Yesterday Was Dramatic - Today is OK, was a critical darling
 		and one of the more inspired electronic releases of the late 90s.`}
 		<br/><br/>
