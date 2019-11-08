@@ -2,6 +2,36 @@ import React from 'react';
 import {oneLine} from 'common-tags';
 
 export default {
+	6: {
+		date: '2019-11-01',
+		issue: 6,
+		title: 'Spirit if...',
+		artist: 'Kevin Drew',
+		year: 2007,
+		discogs_release: '1160734',
+		color: '#d45453',
+		description: ''
+	},
+	5: {
+		date: '2019-10-01',
+		issue: 5,
+		title: 'F♯ A♯ ∞',
+		artist: 'Godspeed You Black Emperor!',
+		year: '1997',
+		discogs_release: '13271532',
+		color: '#000000',
+		description: ''
+	},
+	4: {
+		date: '2019-09-01',
+		issue: 4,
+		title: 'Sowiesoso',
+		artist: 'Cluster',
+		year: '1967',
+		discogs_release: '2390801',
+		color: '#35623b',
+		description: ''
+	},
 	3: {
 		date: '2019-08-01',
 		issue: 3,
